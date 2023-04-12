@@ -29,23 +29,22 @@ int main(void){
                 }
 
             }while(piso<0 || piso>9);
-            if(piso>=actual){
-                for(i=actual;i<=piso;i++){
-                printf("Ascensor en piso %d\n",i);
-                 }
-                i = i - 1;
-            } else{
-                 for(i=actual;i>=piso;i--){
-                printf("Ascensor en piso %d\n",i);
+            if(piso==actual){
+                printf("Ascensor ya se encuentra en el piso selecionado.\n");
+            }else{
+                if(piso>actual){
+                    for(i=actual;i<=piso;i++){
+                    printf("Ascensor en piso %d\n",i);
+                    }
+                    i = i - 1;
+                } else{
+                    for(i=actual;i>=piso;i--){
+                    printf("Ascensor en piso %d\n",i);
+                    }
+                    i = i + 1;
                 }
-                i = i + 1;
             }
            
-            if(piso == i){
-                printf("Piso correcto.\n");
-            } else{
-                printf("Piso incorrecto.\n");
-            }
             actual = piso;
             break;
             case 2:
@@ -57,21 +56,20 @@ int main(void){
                 }
 
             }while(piso<0 || piso>9);
-             if(piso>=actual){
-                for(i=actual;i<=piso;i++){
-                printf("Ascensor en piso %d\n",i);
-                 }
-                i = i - 1;
-            } else{
-                 for(i=actual;i>=piso;i--){
-                printf("Ascensor en piso %d\n",i);
+             if(piso==actual){
+                printf("Ascensor ya se encuentra en el piso selecionado.\n");
+            }else{
+                if(piso>actual){
+                    for(i=actual;i<=piso;i++){
+                    printf("Ascensor en piso %d\n",i);
+                    }
+                    i = i - 1;
+                } else{
+                    for(i=actual;i>=piso;i--){
+                    printf("Ascensor en piso %d\n",i);
+                    }
+                    i = i + 1;
                 }
-                i = i + 1;
-            }
-            if(i==piso){
-                printf("Piso correcto.\n");
-            } else{
-                printf("Piso incorrecto.\n");
             }
             actual = piso;
             break;
