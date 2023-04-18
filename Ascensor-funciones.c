@@ -17,7 +17,6 @@ void Paso(int piso, int actual){
                     i = i + 1;
                 }
             }
-        actual = piso;
 }
 
 int Llamar(int piso, int actual){
